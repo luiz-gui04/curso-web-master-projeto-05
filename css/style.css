@@ -145,8 +145,13 @@ section.veiculos-destaque {
   padding: 90px 2%;
 }
 
+section.veiculos-destaque .container {
+  max-width: 1000px;
+  padding: 40px 0;
+}
+
 .line-titulo {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -160,7 +165,7 @@ section.veiculos-destaque {
   background-color: black;
 }
 
-section.veiculos-destaque h2 {
+section.veiculos-destaque .line-titulo h2 {
   position: relative;
   background-color: white;
   display: inline-block;
@@ -171,20 +176,46 @@ section.veiculos-destaque h2 {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1400px) {
-  section.banner {
-    background-size: 90% auto;
-    background-position: 200% 100%;
-  }
+.vitrine-destaque {
+  float: left;
+  width: 33.3%;
 }
 
-@media screen and (max-width: 1024px) {
-  section.banner {
-    background-size: cover;
-    background-position: center;
-    height: 70vw;
-    min-height: 500px;
-  }
+.vitrine-destaque .carro-img {
+  width: 100%;
+  padding-top: 100%;
+  border: 8px solid white;
+  background-size: 100% 100%;
+}
+
+.vitrine-destaque h2 {
+  padding-left: 8px;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.vitrine-destaque p {
+  padding-top: 8px;
+  padding-left: 8px;
+  color: #353535;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.vitrine-destaque a {
+  margin-left: 8px;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  width: 150px;
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  background-color: #eb2d2d;
+  text-decoration: none;
+  border-bottom: 5px solid #b21e1e;
 }
 
 @media screen and (max-width: 768px) {
@@ -209,5 +240,36 @@ section.veiculos-destaque h2 {
   .text-banner-single {
     width: 240px;
     font-size: 18px;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(4) {
+    width: 270px;
+  }
+
+  section.veiculos-destaque .line-titulo h2 {
+    font-size: 23px;
+  }
+
+  section.veiculos-destaque .container {
+    max-width: 1000px;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .vitrine-destaque {
+    display: inline-block;
+    float: none;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .vitrine-destaque a {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vitrine-destaque {
+    width: 100%;
   }
 }
