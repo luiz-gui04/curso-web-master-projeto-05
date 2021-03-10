@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 html,
@@ -42,7 +42,7 @@ header nav.mobile {
   height: 32px;
   background-size: 100% 100%;
   cursor: pointer;
-  background-image: url("/img/icon_menu.png");
+  background-image: url('img/icon_menu.png');
   display: none;
 }
 
@@ -90,7 +90,7 @@ section.banner {
   width: 100%;
   height: 650px;
   background-color: black;
-  background-image: url("/img/bg.jpg");
+  background-image: url('../img/bg.jpg');
   background-size: contain;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ section.banner {
   text-transform: uppercase;
   color: white;
   font-size: 23px;
-  background-image: url("/img/box-text.png");
+  background-image: url('img/box-text.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -135,7 +135,7 @@ section.banner {
   width: 320px;
   font-size: 21px;
   color: black;
-  background-image: url("/img/box-white-text.png");
+  background-image: url('img/box-white-text.png');
   position: relative;
   left: -30px;
   line-height: 70px;
@@ -317,7 +317,7 @@ section.contato .input-wraper {
   margin-top: 7px;
 }
 
-section.contato input[type="text"] {
+section.contato input[type='text'] {
   width: 100%;
   border: 1px solid #ccc;
   height: 60px;
@@ -339,7 +339,7 @@ section.contato form .input-wraper:nth-of-type(5) {
   text-align: center;
 }
 
-section.contato input[type="submit"] {
+section.contato input[type='submit'] {
   border-right: 0;
   border-left: 0;
   border-top: 0;
@@ -426,7 +426,7 @@ section.venda {
   position: absolute;
   left: 0;
   top: 0;
-  width: 30%;
+  width: 0;
   height: 20px;
   border-radius: 20px;
   background: linear-gradient(
@@ -440,7 +440,7 @@ section.venda {
   width: 26px;
   height: 26px;
   position: absolute;
-  left: calc(30% - 13px);
+  left: 0;
   cursor: pointer;
   top: -3px;
   border-radius: 8px;
@@ -483,7 +483,7 @@ section.venda {
   margin-top: 10px;
 }
 
-.form-venda-wraper input[type="checkbox"] {
+.form-venda-wraper input[type='checkbox'] {
   display: none;
 }
 
@@ -498,7 +498,7 @@ section.venda {
   position: relative;
 }
 
-.form-venda-wraper input[type="checkbox"]:checked + label > .circle {
+.form-venda-wraper input[type='checkbox']:checked + label > .circle {
   display: block;
 }
 
@@ -580,7 +580,7 @@ section.venda-single {
   cursor: pointer;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  background-image: url("../img/arrow-left.png");
+  background-image: url('./img/arrow-left.png');
   background-size: 100% 100%;
   width: 22px;
   height: 22px;
@@ -593,7 +593,7 @@ section.venda-single {
   cursor: pointer;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  background-image: url("../img/arrow-right.png");
+  background-image: url('./img/arrow-right.png');
   background-size: 100% 100%;
   width: 22px;
   height: 22px;
